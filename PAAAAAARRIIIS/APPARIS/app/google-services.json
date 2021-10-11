@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "38617579262",
+    "project_id": "parisrestauran",
+    "storage_bucket": "parisrestauran.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:38617579262:android:f995d547e683780d836faf",
+        "android_client_info": {
+          "package_name": "com.tuti.apparis"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "38617579262-qq6h721q0udqp533a297at34tbcc198v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCD46Z2j90pLIeFUjuFcJoarkLBPhjiAQM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "38617579262-qq6h721q0udqp533a297at34tbcc198v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

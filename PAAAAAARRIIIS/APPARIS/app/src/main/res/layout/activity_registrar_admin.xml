@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistrarAdminActivity">
+    <TextView
+        android:id="@+id/encabezado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ADMIN"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:background="@color/purple_500"
+        android:textColor="@color/black"
+        android:padding="20dp"
+        android:textSize="30dp"
+        android:textStyle="bold|italic"/>
+
+    <TextView
+        android:id="@+id/ms1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/encabezado"
+        android:background="@drawable/textos"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginLeft="35dp"
+        android:padding="15dp"
+        android:textSize="40dp"
+        android:gravity="center"
+        android:text="Contacta con nosotros"/>
+    <TextView
+        android:id="@+id/ms2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ms1"
+        android:background="@drawable/textos"
+        android:layout_margin="35dp"
+        android:padding="15dp"
+        android:gravity="center"
+        android:textSize="40dp"
+        android:text="0960452841"/>
+    <EditText
+        android:id="@+id/etUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ms2"
+        android:background="@drawable/textos"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginLeft="35dp"
+        android:padding="15dp"
+        android:hint="Ingrese su correo"
+        android:inputType="textEmailAddress"/>
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etUser"
+        android:background="@drawable/textos"
+        android:layout_margin="35dp"
+        android:padding="15dp"
+        android:hint="Ingrese su contraseña"
+        android:inputType="textPassword"/>
+    <Button
+        android:id="@+id/btnRegistrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etPassword"
+        android:background="@drawable/botones1"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="90dp"
+        android:layout_marginRight="90dp"
+        android:padding="5dp"
+        android:textSize="25dp"
+        android:text="Continuar"/>
+
+</RelativeLayout>

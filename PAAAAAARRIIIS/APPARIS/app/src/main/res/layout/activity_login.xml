@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="@drawable/login_image">
+
+    <TextView
+        android:id="@+id/texto1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="INICIAR SESION"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="50dp"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imagen1"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/texto1"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/lobby"
+        />
+    <EditText
+        android:id="@+id/etUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imagen1"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="100dp"
+        android:hint="Ingrese correo"
+        android:background="@drawable/textos"
+        android:padding="10dp"
+        android:inputType="textEmailAddress"
+        android:textStyle="bold"
+        android:textColor="#BDC3C7"
+        android:textColorHint="#BDC3C7"
+        android:textSize="25dp"/>
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etUser"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="10dp"
+        android:hint="Ingrese contraseña"
+        android:background="@drawable/textos"
+        android:padding="10dp"
+        android:inputType="textPassword"
+        android:textStyle="bold"
+        android:textColor="#BDC3C7"
+        android:textColorHint="#BDC3C7"
+        android:textSize="25dp"/>
+
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etPassword"
+        android:layout_marginTop="35dp"
+        android:layout_marginRight="200dp"
+        android:layout_marginLeft="200dp"
+        android:background="@drawable/botones2"
+        android:text="Ingresar"
+        android:textSize="20dp"
+        android:textColor="@color/black"/>
+    <Button
+        android:id="@+id/btnRegistrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnLogin"
+        android:layout_marginTop="35dp"
+        android:layout_marginRight="200dp"
+        android:layout_marginLeft="200dp"
+        android:background="@drawable/botones2"
+        android:text="Registrar"
+        android:textSize="20dp"
+        android:textColor="@color/black"/>
+
+
+</RelativeLayout>

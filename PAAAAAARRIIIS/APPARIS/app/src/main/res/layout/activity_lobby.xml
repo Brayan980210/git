@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LobbyActivity"
+    android:background="@drawable/login_image">
+
+    <TextView
+        android:id="@+id/textob"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bien Venido"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:textColor="@color/white"
+        android:textSize="60dp"
+        android:layout_marginTop="200dp"/>
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imagen"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textob"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/lobby"
+        />
+    <Button
+
+        android:id="@+id/btn_usuario"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="4dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginBottom="30dp"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:text="USUARIO"
+        android:textSize="25dp"
+        android:background="@drawable/botones1"
+        android:layout_above="@+id/btn_administrador"/>
+    <Button
+
+        android:id="@+id/btn_administrador"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:text="ADMINISTRADOR"
+        android:textSize="25dp"
+        android:background="@drawable/botones2"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="4dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginBottom="100dp"/>
+
+</RelativeLayout>

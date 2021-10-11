@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AgregarProductoActivity">
+
+    <TextView
+        android:id="@+id/textox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Agrega Producto"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:background="@color/black"
+        android:textColor="@color/white"
+        android:padding="20dp"
+        android:textSize="30dp"
+        android:textStyle="bold|italic"/>
+    <ImageView
+        android:id="@+id/imagenproducto"
+        android:layout_width="350dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/textox"
+        android:layout_marginTop="10dp"
+        android:cropToPadding="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/agregarimagen"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/nombrepro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imagenproducto"
+        android:inputType="textMultiLine"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:textSize="35dp"
+        android:hint="Nombre proucto"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/textos"/>
+    <EditText
+        android:id="@+id/codigopro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nombrepro"
+        android:inputType="number"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:textSize="35dp"
+        android:hint="Codigo"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/textos"/>
+    <EditText
+        android:id="@+id/costopro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/codigopro"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:textSize="35dp"
+        android:hint="Precio costo"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/textos"/>
+    <EditText
+        android:id="@+id/preciopro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/costopro"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:textSize="35dp"
+        android:hint="Precio venta"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/textos"/>
+    <EditText
+        android:id="@+id/stock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/preciopro"
+        android:inputType="number"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:textSize="35dp"
+        android:hint="Stock"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/textos"/>
+
+    <Button
+        android:id="@+id/agregar_producto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/stock"
+        android:background="@drawable/botones1"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp"
+        android:padding="5dp"
+        android:textSize="25dp"
+        android:text="Agregar Producto"/>
+
+</RelativeLayout>
